@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="stylesheet" type="text/css" href="{% static 'landing_page/css/style.css' %}">
+  <meta charset="utf-8" />
+  <style>
+   article, aside, details, figcaption, figure, footer,header,
+   hgroup, menu, nav, section { display: block; }
+  </style>
+ </head>
+ <body>
+    <form action="/landing_page/about/" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit">
+    </form>
+ </body>
+</html>
