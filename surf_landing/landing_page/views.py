@@ -7,12 +7,12 @@ from .forms import SubscribeForm
 from .models import Client
 
 
-class AboutView(TemplateView):
-    template_name = "about.html"
+class LandingView(TemplateView):
+    template_name = "landing.html"
     form_class = SubscribeForm 
     
     def get(self, *args, **kwargs):
-        return render(self.request, 'about.html', {'form': self.form_class()})
+        return render(self.request, 'landing.html', {'form': self.form_class()})
 
     def post(self, *args, **kwargs):    
         form = self.form_class(self.request.POST)

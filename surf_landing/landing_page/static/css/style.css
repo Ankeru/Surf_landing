@@ -1,0 +1,35 @@
+* {
+margin: 0;
+padding: 0;
+}
+body {
+min-width: 1024px;
+border-spacing: 0;
+border-collapse: collapse;
+background: 
+#ffffff
+margin-bottom: 50px; 
+}
+/* Класс, задающий размер страницы и выравнивание по центру */
+.container {
+margin: auto;
+width: 1024px;
+display: block;
+position: relative;
+}
+
+header {
+display: block;
+
+}
+main {
+display: block;
+}
+
+img#surfgirl{
+    width: 100%;
+    height: auto;
+}
+#logo{
+    height: 80px;
+}

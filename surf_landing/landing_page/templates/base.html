@@ -1,0 +1,15 @@
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <title>{% block title %}{% endblock %}</title>
+    {% block head %}{% endblock %}
+</head>
+    <header>
+        <img src="{% static 'pictures/pablotour.png' %}" id="logo">
+    </header>
+    <body class='container'>
+        <h1>Base block header</h1>
+        {% block content %}{% endblock %}
+    </body>
+</html>
